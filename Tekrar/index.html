@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta author="Ahmet Şimşek">
+        <title>Tekrar Page</title>
+    </head>
+    <body>
+        <div style="background-color: darkgreen;">
+             <header style="color: chocolate;">
+            <h1>Sayfama Hoş Geldiniz</h1>
+            <nav>
+                <ul>
+                    <a href=""> <li>Hakkımda</li></a>
+                    <a href=""><li>İletişim</li></a>
+                    <a href=""><li>Ana Sayfa</li></a>
+                    <li>
+                        <a href="">hak</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        </div>
+       
+         <div style="background-color: chocolate;">
+            <main>
+            <section>
+                <h2>Hakkımda</h2>
+                <p><b>Ben Ahmet Şimşek. Atatürk Üniversitesi bilgisayar mühendisi mezunuyum.</b></p>
+            </section>
+
+            <section>
+                <h2>Resmim</h2>
+                <img src="img1.jpg" alt="Ahmet Şimşek" title="Ben Ahmet" width="300px">
+            </section>
+
+            <section>
+                <h2>Müzik Alanı</h2>
+                <audio src="music.mp3" controls autoplay loop muted></audio>
+            </section>
+
+            <section>
+                <h2>Video Alanı</h2>
+                <video src="video.mp4" controls autoplay loop muted width="500px"></video>
+            </section>
+
+            <section>
+                <h2>Okul Geçmişi</h2>
+                <dl>
+                    <dt><b>Atatürk Üniversitesi</b></dt>
+                    <dd>bilgisayar mühendisliği</dd>
+
+                    <dt><b>İYTE</b></dt>
+                    <DD>Çevre Mühendisliği</DD>
+                </dl>
+
+                <ul>
+                    <li>Okul üçüncülüğü</li>
+                    </li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Çalışma Günleri</h2>
+                <table bgcolor="black">
+                    <tr bgcolor="gray">
+                        <th>Pazartesi</th>
+                        <th>Salı</th>
+                        <th>Çarşamba</th>
+                        <th>Perşembe</th>
+                        <th>Cuma</th>
+                        <th>Cumartesi</th>
+                        <th>Pazar</th>    
+                    </tr>
+
+                    <tr bgcolor="lightgrey" align="center" >
+                        <td>9-5</td>
+                        <td>İzinli</td>
+                        <td>9-5</td>
+                        <td>LC Waikiki</td>
+                        <td>9-5</td>
+                        <td>9-5</td>
+                        <td>LC Waikiki</td>
+                    </tr>
+
+                </table>
+            </section>
+
+            <section>
+                <h2>Araştırma Alanı</h2>
+                <iframe src="https://www.wikipedia.org/" frameborder="10"></iframe>
+            </section>
+
+            <section>
+                <h2>Açıklama</h2>
+                <span style="background-color: brown;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima odio minus iusto deserunt id molestias, 
+                </span>
+
+                <div style="background-color: coral;">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque nulla libero cupiditate alias sapiente veniam totam, illo optio tenetur sint voluptas
+                </div>
+            </section>
+
+            <section>
+                <h2> Tıklayınız</h2>
+
+                <a href="https://www.wikipedia.org/">
+                   <button onclick="tikla()" style="background-color: brown; color: chocolate; border-radius: 15px; width: 100px;">Kaydol</button> 
+                </a>
+
+                
+
+                <p id="sonuc">Tıklayınız:</p>
+
+                <script>
+                    function tikla()
+                    {
+                        document.getElementById("sonuc").innerHTML="Başarıyla ulaştınız"
+                    }
+                </script>
+            </section>
+
+            <section>
+                <h2>Form Kayıt Alanı</h2>
+                <form>
+                    <label for="isim"><b>Ad:</b></label>
+                    <input type="text" name="isim" id="isim">
+
+                    <br><br>
+
+                    <label for="soyad"><b>Soyisim:</b></label>
+                    <input type="text" name="soyad" id="soyad">
+
+                    <br><br>
+
+                    <label for="numara"><b>Telefon:</b></label>
+                    <input type="tel" name="numara" id="numara" placeholder="(555) 555 5555">
+
+                    <br><br>
+
+                    <label for="sayı"><b>Kaç Kardeş:</b></label>
+                    <input type="number" name="sayı" id="sayı" min="0" max="10">
+
+                    <br><br>
+
+                    <label for="eposta"><b>E-posta:</b></label>
+                    <input type="email" name="eposta" id="eposta" placeholder="abc@gmail.com">
+
+                    <br><br>
+
+                    <label for="cinsiyet"><b>Cinsiyetiniz:</b></label>
+                    <label for="erkek">Erkek:</label>
+                    <input type="radio" name="cinsiyet" id="erkek">
+                    <label for="Kadın">Kadın:</label>
+                    <input type="radio" name="cinsiyet" id="Kadın">
+
+                    <br><br>
+                    
+                    <label for="tick"><b>Çalışıyor musun?</b></label>
+                    <input type="checkbox" name="tick" id="tick">
+
+                    <br><br>
+
+                    <label for="liste"><b>Sosyal Güvencen:</b></label>
+                    <select name="" id="">
+                        <option value="empty" selected></option>
+                        <option value="ssk">SSK'am var</option>
+                        <option value="bagkur">Bağkur var</option>
+                        <option value="issiz">İşsiz</option>
+                    </select>
+                    <br><br>
+
+                    <label for="dusunce"><b>Eklemek İstediğin:</b></label><br><br>
+                    <textarea name="dusunce" id="dusunce" rows="5px" cols="35px" placeholder="Merhaba, fikrim......."></textarea>
+
+                    <br><br>
+
+                    <input type="reset" value="yenile" style="background-color: blue; color: chocolate; width: 100px;">
+                    <input type="submit" style="background-color: crimson; color:forestgreen; width: 100px;">
+
+                </form>
+            </section>
+        </main>
+
+         </div>
+        
+        <footer>
+        </footer>
+            <div style="background-color: blueviolet; width: 500px; height: 200px;">
+                <h2>
+                    <p><b><mark>TÜM HAKLAR SAKLIDIR @2026</mark></b></p>
+                </h2>
+                
+            </div>
+          
+        </footer>
+    </body>
+</html>
